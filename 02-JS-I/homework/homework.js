@@ -71,19 +71,18 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.lenght === str2.lenght;
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num <= 90){
+  if (num < 90) {
   return true;
-  } else{
+  } else {
     return false;
   }
-  
 }
 
 function mayorQueCincuenta(num) {
@@ -194,7 +193,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var saludo = "Hola" + nombre + "!";
+  var saludo = "Hola " + nombre + "!";
   return saludo
 }
 
@@ -215,7 +214,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return (base * area) / 2
+  return (base * altura) / 2
 }
 
 
