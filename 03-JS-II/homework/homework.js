@@ -5,7 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x < y){
+  if (x > y){
     return x;
   } else {
     return y;
@@ -16,7 +16,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad > 18){
+  if (edad >= 18){
     return "Allowed";
   } else {
     return "Not allowed";
@@ -83,6 +83,8 @@ function colors(color) {
       return "This is green";
     case "orange":
       return "This is orange";
+    default:
+      return "Color not found";
   }
 }
 
@@ -200,11 +202,11 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (String.length(nuermo) === "3"){
+  if (numero > 99 && numero < 1000){
     return true
-  } else {
+  } 
     return false
-  }
+  
 }
 
 function doWhile(numero) {
